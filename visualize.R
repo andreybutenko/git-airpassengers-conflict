@@ -12,14 +12,14 @@ data <- data.frame(
 
 # Summarize data by year:
 data %>% 
-  group_by(year) %>% 
+  group_by(month) %>% 
   summarize(passengers = mean(passengers)) %>% 
 
 # Finally, plot the data!
-  ggplot(aes(x = year, y = passengers)) +
+  ggplot(aes(x = month, y = passengers, group = 1)) +
   labs(
     title = 'Passengers over time',
-    x = 'Year',
+    x = 'Month',
     y = 'Passengers (thousands)'
   ) +
   geom_line(size = 2, color = 'blue')
