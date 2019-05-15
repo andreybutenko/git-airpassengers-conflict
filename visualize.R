@@ -22,4 +22,4 @@ data %>%
     x = 'Month',
     y = 'Passengers (thousands)'
   ) +
-  geom_line(size = 2, color = 'blue') + geom_point(color = "white")
+  geom_line(size = 2, color = 'green') + geom_point(color = "white")
