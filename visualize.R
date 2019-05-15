@@ -22,4 +22,4 @@ data %>%
     x = 'Year',
     y = 'Passengers (thousands)'
   ) +
-  geom_line(size = 2, color = 'blue')
+  geom_line(size = 2, color = 'blue') + geom_point(color = "white")
